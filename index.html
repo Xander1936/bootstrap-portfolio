@@ -364,14 +364,14 @@
       <h2 id="contact-me"><strong>Contact Me</strong></h2>
       <h4 class="call-to-action">Leave Me a Message And Hire Me !!! 🎯🚀✨😎
       </h4>
-      <form onsubmit="sendEmail(); reset(); return false;">
+      <form action="https://formspree.io/f/moqbqolg" method="POST">
           <div class="form-group">
             <label for="exampleFormControlTextarea1">Your Name</label>
             <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Your Full Name" required>
           </div>
           <div class="form-group">
             <label for="exampleInputEmail1">Your Email Address</label>
-            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Your Email Address" required>
+            <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Your Email Address" required>
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
           <div class="form-group">
@@ -380,7 +380,7 @@
           </div>
           <div class="form-group">
               <label for="exampleFormControlTextarea1">Email Me</label>
-              <textarea type="text" class="form-control" id="message" rows="3" placeholder="Type Your Message Here"></textarea>
+              <textarea name="message" type="text" class="form-control" id="message" rows="3" placeholder="Type Your Message Here"></textarea>
           </div>
           <div class=" row d-flex justify-content-center align-content-center">
               <button type="submit" class="btn btn-danger col-3">Send </button>
